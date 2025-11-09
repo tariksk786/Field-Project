@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pest Control | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html" class="active"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://www.flowerpower.com.au/wordpress/wp-content/uploads/2018/06/Chewing-and-rasping-collage.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🐛 Pest Control</span><span class="lang-hi hidden">🐛 कीट नियंत्रण</span></h1>
+    <p><span class="lang-en">Learn about managing pests effectively to protect your crops.</span><span class="lang-hi hidden">अपने फसलों की रक्षा के लिए कीटों का प्रभावी प्रबंधन सीखें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+
+    <div class="info-box">
+      <h2><span class="lang-en">Common Crop Pests</span><span class="lang-hi hidden">सामान्य फसल कीट</span></h2>
+      <ul>
+        <li><span class="lang-en">Aphids – Suck sap from leaves and stems</span><span class="lang-hi hidden">एपिड – पत्तियों और तनों का रस चूसते हैं</span></li>
+        <li><span class="lang-en">Bollworms – Attack cotton bolls</span><span class="lang-hi hidden">बोलवर्म – कपास के फलों पर हमला करते हैं</span></li>
+        <li><span class="lang-en">Stem borers – Damage maize and rice stems</span><span class="lang-hi hidden">स्टेम बोरर – मक्का और चावल के तनों को नुकसान पहुँचाते हैं</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Organic Control Methods</span><span class="lang-hi hidden">जैविक नियंत्रण के तरीके</span></h2>
+      <ul>
+        <li><span class="lang-en">Neem oil sprays</span><span class="lang-hi hidden">नीम तेल का छिड़काव</span></li>
+        <li><span class="lang-en">Use of natural predators like ladybugs</span><span class="lang-hi hidden">प्राकृतिक शिकारी जैसे लेडीबग का उपयोग</span></li>
+        <li><span class="lang-en">Crop rotation to reduce pest buildup</span><span class="lang-hi hidden">कीट संचय कम करने के लिए फसल चक्रण</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Chemical Control Methods</span><span class="lang-hi hidden">रासायनिक नियंत्रण के तरीके</span></h2>
+      <ul>
+        <li><span class="lang-en">Insecticides for leaf and stem pests</span><span class="lang-hi hidden">पत्तियों और तनों के कीटों के लिए कीटनाशक</span></li>
+        <li><span class="lang-en">Fungicides for fungal pests</span><span class="lang-hi hidden">फंगल कीटों के लिए फफूंदनाशक</span></li>
+        <li><span class="lang-en">Follow recommended dosages carefully</span><span class="lang-hi hidden">सिफ़ारिश किए गए मात्रा को सावधानी से लागू करें</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://redekopmfg.com/wp-content/uploads/2022/03/Agricultural-Pests-726x1024.jpg" alt="Crop Pests">
+    <img src="https://www.infonet-biovision.org/sites/default/files/plant_health/cropsfruitsvegetables/1019_0.jpeg" alt="Bollworm">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ehbA5g0eW-ihRZ0Yl3CaB59Gvp7VrPL3qg&s" alt="Aphids">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

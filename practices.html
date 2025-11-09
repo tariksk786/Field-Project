@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farming Practices | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html" class="active"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://spudnik.sfo2.digitaloceanspaces.com/wp-content/uploads/2024/03/Types-of-farming.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌾 Farming Practices</span><span class="lang-hi hidden">🌾 खेती के तरीके</span></h1>
+    <p><span class="lang-en">Learn about modern and traditional farming practices for better yields.</span>
+    <span class="lang-hi hidden">बेहतर उपज के लिए आधुनिक और पारंपरिक खेती के तरीकों के बारे में जानें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+
+    <div class="info-box">
+      <h2><span class="lang-en">Land Preparation</span><span class="lang-hi hidden">भूमि तैयारी</span></h2>
+      <ul>
+        <li><span class="lang-en">Plowing to loosen soil</span><span class="lang-hi hidden">मिट्टी को ढीला करने के लिए जुताई</span></li>
+        <li><span class="lang-en">Levelling fields for uniform irrigation</span><span class="lang-hi hidden">समान सिंचाई के लिए खेतों का समतलीकरण</span></li>
+        <li><span class="lang-en">Adding compost and organic matter</span><span class="lang-hi hidden">खाद और जैविक पदार्थ डालना</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Sowing Techniques</span><span class="lang-hi hidden">बुवाई तकनीक</span></h2>
+      <ul>
+        <li><span class="lang-en">Proper seed spacing for optimal growth</span><span class="lang-hi hidden">उपयुक्त वृद्धि के लिए बीजों की दूरी</span></li>
+        <li><span class="lang-en">Use of quality seeds</span><span class="lang-hi hidden">उच्च गुणवत्ता वाले बीजों का उपयोग</span></li>
+        <li><span class="lang-en">Seed treatment before sowing</span><span class="lang-hi hidden">बुवाई से पहले बीजों का उपचार</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Irrigation Practices</span><span class="lang-hi hidden">सिंचाई तकनीक</span></h2>
+      <ul>
+        <li><span class="lang-en">Drip or sprinkler irrigation for water efficiency</span><span class="lang-hi hidden">जल दक्षता के लिए ड्रिप या स्प्रिंकलर सिंचाई</span></li>
+        <li><span class="lang-en">Timely irrigation depending on crop stage</span><span class="lang-hi hidden">फसल के चरण के अनुसार समय पर सिंचाई</span></li>
+        <li><span class="lang-en">Avoid waterlogging</span><span class="lang-hi hidden">जलभराव से बचें</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Harvesting & Post-Harvest</span><span class="lang-hi hidden">फसल कटाई और कटाई के बाद</span></h2>
+      <ul>
+        <li><span class="lang-en">Harvest at correct maturity</span><span class="lang-hi hidden">सही परिपक्वता पर फसल कटाई</span></li>
+        <li><span class="lang-en">Proper drying and storage</span><span class="lang-hi hidden">उचित सुखाने और भंडारण</span></li>
+        <li><span class="lang-en">Use of modern harvesting tools</span><span class="lang-hi hidden">आधुनिक कटाई उपकरणों का उपयोग</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYyhhyDiHYb2MT8RK1fnK2nyz4VIWiO8I0A&s" alt="Farming Practices Field">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNStDFXhgcbvODg1sVn3X0D6awlKBlgO2mSw&s" alt="Irrigation">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInS82VXQUXbh-FTX5ISUnEy7pJ9E38AeqDA&s" alt="Harvesting Crops">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span>
+  <span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wheat | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html" class="active"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://www.shutterstock.com/image-photo/wheat-ears-heads-set-isolated-260nw-2481806661.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌾 Wheat</span><span class="lang-hi hidden">🌾 गेहूं</span></h1>
+    <p><span class="lang-en">Learn everything about growing wheat effectively.</span><span class="lang-hi hidden">गेहूं की खेती के बारे में पूरी जानकारी प्राप्त करें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+    <div class="info-box">
+      <h2><span class="lang-en">General Information</span><span class="lang-hi hidden">सामान्य जानकारी</span></h2>
+      <p><span class="lang-en">Wheat is a cereal grain, one of the most important staple foods worldwide. It requires moderate climate and well-drained loamy soil.</span>
+      <span class="lang-hi hidden">गेहूं एक अनाज है, जो विश्व भर में एक महत्वपूर्ण भोजन है। इसे मध्यम जलवायु और अच्छी जल निकासी वाली दोमट मिट्टी की आवश्यकता होती है।</span></p>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Season to Grow</span><span class="lang-hi hidden">बुवाई का मौसम</span></h2>
+      <p><span class="lang-en">Best grown during Rabi season (October - March).</span>
+      <span class="lang-hi hidden">Rabi मौसम (अक्टूबर - मार्च) में बुवाई सबसे अच्छी होती है।</span></p>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Recommended Chemicals</span><span class="lang-hi hidden">सिफ़ारिश की गई रसायन</span></h2>
+      <ul>
+        <li><span class="lang-en">Urea for nitrogen supply</span><span class="lang-hi hidden">नाइट्रोजन आपूर्ति के लिए यूरिया</span></li>
+        <li><span class="lang-en">2,4-D herbicide for weed control</span><span class="lang-hi hidden">घास नियंत्रण के लिए 2,4-D हर्बीसाइड</span></li>
+        <li><span class="lang-en">Fungicide for rust prevention</span><span class="lang-hi hidden">जंग रोकथाम के लिए फफूंदनाशक</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Benefits</span><span class="lang-hi hidden">लाभ</span></h2>
+      <ul>
+        <li><span class="lang-en">Major source of carbohydrates & protein</span><span class="lang-hi hidden">कार्बोहाइड्रेट और प्रोटीन का प्रमुख स्रोत</span></li>
+        <li><span class="lang-en">Supports food security</span><span class="lang-hi hidden">खाद्य सुरक्षा में मदद करता है</span></li>
+        <li><span class="lang-en">Grown in many regions with moderate rainfall</span><span class="lang-hi hidden">मध्यम वर्षा वाले कई क्षेत्रों में उगाई जाती है</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://c8.alamy.com/comp/2EEEDHX/grain-of-wheat-close-up-as-a-background-macro-2EEEDHX.jpg" alt="Wheat">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm4yGFTV4l5bYCmfFUhwGnj-fUoa83cT2wvA&s" alt="Wheat Field">
+    <img src="https://smallgrains.ces.ncsu.edu/wp-content/uploads/2024/05/20240514_143921-scab-collage.jpg" alt="Wheat Heads">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

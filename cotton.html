@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotton | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html" class="active"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://media.istockphoto.com/id/1452266868/photo/cotton-plant.jpg?s=612x612&w=0&k=20&c=mtNsON32zUjlYDFN2P-cqu8B5p8I2n2OFR-a1HWdpJQ=');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌿 Cotton</span><span class="lang-hi hidden">🌿 कपास</span></h1>
+    <p><span class="lang-en">Learn everything about growing cotton effectively.</span><span class="lang-hi hidden">कपास की खेती के बारे में पूरी जानकारी प्राप्त करें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+    <div class="info-box">
+      <h2><span class="lang-en">General Information</span><span class="lang-hi hidden">सामान्य जानकारी</span></h2>
+      <p><span class="lang-en">Cotton is a soft fiber crop grown for textile production. Requires warm climate, moderate rainfall, and fertile soil.</span>
+      <span class="lang-hi hidden">कपास एक नरम रेशेदार फसल है जो वस्त्र उत्पादन के लिए उगाई जाती है। इसे गर्म जलवायु, मध्यम वर्षा और उपजाऊ मिट्टी की आवश्यकता होती है।</span></p>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Season to Grow</span><span class="lang-hi hidden">बुवाई का मौसम</span></h2>
+      <p><span class="lang-en">Sowing from April to June is recommended.</span>
+      <span class="lang-hi hidden">अप्रैल से जून के बीच बुवाई करने की सलाह दी जाती है।</span></p>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Recommended Chemicals</span><span class="lang-hi hidden">सिफ़ारिश की गई रसायन</span></h2>
+      <ul>
+        <li><span class="lang-en">Nitrogen fertilizers like Urea</span><span class="lang-hi hidden">नाइट्रोजन उर्वरक जैसे यूरिया</span></li>
+        <li><span class="lang-en">Herbicides for weed control</span><span class="lang-hi hidden">घास नियंत्रण के लिए हर्बीसाइड</span></li>
+        <li><span class="lang-en">Fungicides for leaf spot and boll rot</span><span class="lang-hi hidden">लीफ स्पॉट और बोल रॉट के लिए फफूंदनाशक</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Benefits</span><span class="lang-hi hidden">लाभ</span></h2>
+      <ul>
+        <li><span class="lang-en">Used for textiles and fabrics</span><span class="lang-hi hidden">वस्त्र और कपड़े के लिए उपयोगी</span></li>
+        <li><span class="lang-en">Supports rural economy</span><span class="lang-hi hidden">ग्रामीण अर्थव्यवस्था में सहायक</span></li>
+        <li><span class="lang-en">Provides employment to farmers</span><span class="lang-hi hidden">किसानों को रोजगार प्रदान करता है</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62HNnlJ8apihukf4PdtqWims3ARzB8MUTwA&s" alt="Cotton Field">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaYx4ecVMZ695DiJyp-OPpjsV2iYRo9lojVw&s" alt="Cotton Bolls">
+    <img src="https://media.istockphoto.com/id/173873549/photo/cotton-stripper-harvesting-crop.jpg?s=612x612&w=0&k=20&c=jBdg7BcINrZV9Fi8-aUQK3-fT7ZEb0nBXZjgsC_tLb4=" alt="Cotton Harvest">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

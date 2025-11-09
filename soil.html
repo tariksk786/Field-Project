@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soil Management | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html" class="active"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://www.thespruce.com/thmb/yNhh0o4rY-GSQ9yDtCFYJocBCDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthy-soil-and-how-to-make-it-2539853-hero-fdf9b0280dca41cb8ae9614e6fc4a0b0.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌱 Soil Management</span><span class="lang-hi hidden">🌱 मिट्टी प्रबंधन</span></h1>
+    <p><span class="lang-en">Learn how to manage soil for better crop growth.</span><span class="lang-hi hidden">बेहतर फसल वृद्धि के लिए मिट्टी का प्रबंधन कैसे करें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+
+    <div class="info-box">
+      <h2><span class="lang-en">Soil Types</span><span class="lang-hi hidden">मिट्टी के प्रकार</span></h2>
+      <ul>
+        <li><span class="lang-en">Loamy – Ideal for most crops</span><span class="lang-hi hidden">दोमट – अधिकांश फसलों के लिए आदर्श</span></li>
+        <li><span class="lang-en">Clay – Retains water, needs drainage</span><span class="lang-hi hidden">मिट्टी – पानी रोकती है, नाली की आवश्यकता होती है</span></li>
+        <li><span class="lang-en">Sandy – Drains fast, low nutrient retention</span><span class="lang-hi hidden">रेतीली – तेजी से पानी निकलता है, पोषक तत्व कम बनाए रखती है</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Soil Fertility</span><span class="lang-hi hidden">मिट्टी की उर्वरता</span></h2>
+      <ul>
+        <li><span class="lang-en">Add organic manure to improve nutrients</span><span class="lang-hi hidden">पोषक तत्व सुधारने के लिए जैविक खाद डालें</span></li>
+        <li><span class="lang-en">Use crop rotation to maintain fertility</span><span class="lang-hi hidden">उर्वरता बनाए रखने के लिए फसल चक्रण करें</span></li>
+        <li><span class="lang-en">Check pH levels regularly</span><span class="lang-hi hidden">pH स्तरों की नियमित जाँच करें</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Soil Protection</span><span class="lang-hi hidden">मिट्टी सुरक्षा</span></h2>
+      <ul>
+        <li><span class="lang-en">Prevent erosion using cover crops</span><span class="lang-hi hidden">कवर क्रॉप का उपयोग कर कटाव से बचाएँ</span></li>
+        <li><span class="lang-en">Use terraces on slopes</span><span class="lang-hi hidden">ढलानों पर सीढ़ीदार खेती का उपयोग करें</span></li>
+        <li><span class="lang-en">Maintain organic matter</span><span class="lang-hi hidden">जैविक पदार्थ बनाए रखें</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSnmBLcWDFRAbug9WbqUI15B758CsWxYgkDA&s" alt="Soil Field">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-yqUmJZnh_DGTKG82V8IK3N5tCx1pUsp6_w&s" alt="Soil Structure">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk7Yp__29P1OAlHR3JZAPDxFJYlL-TBl382g&s" alt="Compost Soil">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

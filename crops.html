@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crops | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html" class="active"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://agriculture.basf.us/content/dam/cxm/agriculture/crop-protection/us-crop/images/Header_1200x360_Soybean.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌾 Crops</span><span class="lang-hi hidden">🌾 फसलें</span></h1>
+    <p><span class="lang-en">Select a crop to know detailed information.</span><span class="lang-hi hidden">विस्तृत जानकारी जानने के लिए एक फसल चुनें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail" style="padding:40px;">
+  <a href="wheat.html" class="crop-card" data-name="Wheat">
+    <div class="info-box">
+      <h2><span class="lang-en">Wheat</span><span class="lang-hi hidden">गेहूं</span></h2>
+      <img src="https://c8.alamy.com/comp/2EEEDHX/grain-of-wheat-close-up-as-a-background-macro-2EEEDHX.jpg" alt="Wheat">
+    </div>
+  </a>
+
+   <a href="cotton.html" class="crop-card" data-name="Cotton">
+    <div class="info-box">
+      <h2><span class="lang-en">Cotton</span><span class="lang-hi hidden">कपास</span></h2>
+      <img src="https://cdn.britannica.com/18/156618-050-39339EA2/cotton-harvesting.jpg" alt="Cotton">
+    </div>
+  </a>
+
+  <a href="rice.html" class="crop-card" data-name="Rice">
+    <div class="info-box">
+      <h2><span class="lang-en">Rice</span><span class="lang-hi hidden">चावल</span></h2>
+      <img src="https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg" alt="Rice">
+    </div>
+  </a>
+
+  <a href="maize.html" class="crop-card" data-name="Maize">
+    <div class="info-box">
+      <h2><span class="lang-en">Maize</span><span class="lang-hi hidden">मक्का</span></h2>
+      <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/405648504/NA/VS/QJ/5568350/yellow-corn-maize.jpg" alt="Maize">
+    </div>
+  </a>
+
+  
+  <a href="sugarcane.html" class="crop-card" data-name="Sugarcane">
+    <div class="info-box">
+      <h2><span class="lang-en">Sugarcane</span><span class="lang-hi hidden">गन्ना</span></h2>
+      <img src="https://vcdn1-english.vnecdn.net/2024/10/30/sugarcane-5388628-1280-6817-1730240283.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=hn5n5811dIIusPRUkfOzpQ" alt="Sugarcane">
+    </div>
+  </a>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>

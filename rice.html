@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rice | Farmer Knowledge Base</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Chatbot -->
+<div id="chatbot-button">💬</div>
+<div id="chatbot-window" class="hidden">
+  <div class="chatbot-header">
+    <h3>Farmer Chatbot 🤖</h3>
+    <button id="close-chatbot">✖</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+    <div class="bot-msg">
+      <span class="lang-en">👋 Ask me about crops, pests, soil, or farming tips.</span>
+      <span class="lang-hi hidden">👋 मुझसे फसल, कीट, मिट्टी या खेती के सुझाव पूछें।</span>
+    </div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="chatbot-text" placeholder="Type or speak your question..." />
+    <button id="voice-btn" title="Speak"><i class="fa fa-microphone"></i></button>
+    <button id="send-chatbot"><i class="fa fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="lang-en">🌿 Farmer Knowledge</span>
+    <span class="lang-hi hidden">🌿 किसान ज्ञान</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-hi hidden">होम</span></a></li>
+    <li><a href="crops.html" class="active"><span class="lang-en">Crops</span><span class="lang-hi hidden">फसलें</span></a></li>
+    <li><a href="pest.html"><span class="lang-en">Pest Control</span><span class="lang-hi hidden">कीट नियंत्रण</span></a></li>
+    <li><a href="soil.html"><span class="lang-en">Soil Management</span><span class="lang-hi hidden">मिट्टी प्रबंधन</span></a></li>
+    <li><a href="practices.html"><span class="lang-en">Farming Practices</span><span class="lang-hi hidden">खेती के तरीके</span></a></li>
+  </ul>
+  <div class="language-toggle">
+    <button id="lang-en-btn" class="active">EN</button>
+    <button id="lang-hi-btn">हिं</button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" style="background-image:url('https://cdn.britannica.com/17/176517-050-6F2B774A/Pile-uncooked-rice-grains-Oryza-sativa.jpg');">
+  <div class="hero-content">
+    <h1><span class="lang-en">🌾 Rice</span><span class="lang-hi hidden">🌾 चावल</span></h1>
+    <p><span class="lang-en">Learn everything about growing rice effectively.</span><span class="lang-hi hidden">चावल की खेती के बारे में पूरी जानकारी प्राप्त करें।</span></p>
+  </div>
+</header>
+
+<section class="crop-detail">
+  <div class="crop-info">
+    <div class="info-box">
+      <h2><span class="lang-en">General Information</span><span class="lang-hi hidden">सामान्य जानकारी</span></h2>
+      <p><span class="lang-en">Rice is a cereal grain that is a staple food for a large part of the world's population. It grows well in flooded fields and warm climate.Rice is a staple cereal grain, a staple food for more than half the world's population, grown in warm regions and primarily belonging to the Oryza sativa species. It is a grass that requires high temperatures, high humidity, and plentiful water to grow, though it can be cultivated with irrigation in less rainy areas. There are many varieties, shapes, and colors, and while it is often cooked after processing, it can also be fried.                Growing conditions     Climate: Rice is a Kharif crop that needs temperatures above \(25^{\circ }C\) and high humidity, with annual rainfall over 100 cm.  Soil: It thrives in soil that can hold water well, ideally with about 50% clay content and an impervious hardpan or clay-pan underneath.  Water: It requires a plentiful supply of water, often grown with irrigation in areas with less rainfall. </span>
+      <span class="lang-hi hidden">चावल एक अनाज है जो विश्व की बड़ी आबादी के लिए मुख्य भोजन है। यह जलमग्न खेतों और गर्म जलवायु में अच्छी तरह उगता है। चावल एक मुख्य अनाज है और दुनिया की आधी से अधिक आबादी के लिए एक मुख्य भोजन है, जिसे गर्म क्षेत्रों में उगाया जाता है और यह मुख्य रूप से ओराइजा सैटिवा प्रजाति से संबंधित है. यह एक घास है जिसे उगने के लिए उच्च तापमान, उच्च आर्द्रता और भरपूर पानी की आवश्यकता होती है, हालांकि इसे कम वर्षा वाले क्षेत्रों में सिंचाई के साथ भी उगाया जा सकता है. इसकी कई किस्में, आकार और रंग होते हैं, और हालांकि इसे अक्सर प्रसंस्करण के बाद पकाया जाता है, इसे तला भी जा सकता है. उगाने की शर्तें जलवायु: चावल एक खरीफ फसल है, जिसे \(25^{\circ }C\) से ऊपर के तापमान और 100 सेमी से अधिक वार्षिक वर्षा के साथ उच्च आर्द्रता की आवश्यकता होती है.मिट्टी: यह ऐसी मिट्टी में अच्छी तरह से उगता है जो पानी को अच्छी तरह से रोक सके, आदर्श रूप से लगभग 50% चिकनी मिट्टी की मात्रा और नीचे एक अभेद्य कड़ी परत या चिकनी मिट्टी की परत हो.पानी: इसे पानी की भरपूर आपूर्ति की आवश्यकता होती है, जिसे अक्सर कम वर्षा वाले क्षेत्रों में सिंचाई के साथ उगाया जाता है. </span></p>
+    </div>
+
+
+    <div class="info-box">
+      <h2><span class="lang-en">Season to Grow</span><span class="lang-hi hidden">बुवाई का मौसम</span></h2>
+      <p><span class="lang-en">Kharif season (June - October) is ideal for rice cultivation.   Rice has three growing seasons: Kharif (main season, June-July sowing to November-December harvest), Rabi (November to April in irrigated areas), and Summer (November-February sowing to March-June harvest). The most common and largest season is the Kharif season, but variations depend on local climate and water availability, especially in regions like Maharashtra, which primarily grows rice during the Kharif season under rainfed conditions. </span>
+      <span class="lang-hi hidden">खरीफ मौसम (जून - अक्टूबर) चावल की खेती के लिए उपयुक्त है।   चावल की खेती के तीन मौसम हैं: खरीफ (जून-जुलाई में बुआई से नवंबर-दिसंबर में कटाई), रबी (सिंचाई वाले क्षेत्रों में नवंबर से अप्रैल तक), और गर्मियों में (नवंबर-फरवरी में बुआई से मार्च-जून में कटाई)। सबसे आम और सबसे बड़ा मौसम खरीफ है, लेकिन स्थानीय जलवायु और पानी की उपलब्धता के कारण इसमें भिन्नता होती है, विशेषकर महाराष्ट्र जैसे क्षेत्रों में, जहां मुख्य रूप से खरीफ मौसम में वर्षा-आधारित खेती होती है। 
+खरीफ मौसम
+कब: जून-जुलाई में बुआई और नवंबर-दिसंबर में कटाई।
+विशेषताएं: यह भारत में चावल का मुख्य मौसम है और सबसे बड़ा है।
+ज़रूरतें: इस मौसम की फसलें गर्म और आर्द्र जलवायु के साथ-साथ भरपूर पानी की आवश्यकता होती है। </span></p>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Recommended Chemicals</span><span class="lang-hi hidden">सिफ़ारिश की गई रसायन</span></h2>
+      <ul>
+        <li><span class="lang-en">Urea and DAP for nutrients</span><span class="lang-hi hidden">पोषक तत्वों के लिए यूरिया और DAP</span></li>
+        <li><span class="lang-en">Herbicides for weed control</span><span class="lang-hi hidden">घास नियंत्रण के लिए हर्बीसाइड</span></li>
+        <li><span class="lang-en">Fungicides for blast and blight</span><span class="lang-hi hidden">ब्लास्ट और ब्लाइट के लिए फफूंदनाशक</span></li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h2><span class="lang-en">Benefits</span><span class="lang-hi hidden">लाभ</span></h2>
+      <ul>
+        <li><span class="lang-en">Major source of calories and carbohydrates</span><span class="lang-hi hidden">कैलोरी और कार्बोहाइड्रेट का प्रमुख स्रोत</span></li>
+        <li><span class="lang-en">Supports food security worldwide</span><span class="lang-hi hidden">विश्व भर में खाद्य सुरक्षा में मदद करता है</span></li>
+        <li><span class="lang-en">Suitable for wet and paddy fields</span><span class="lang-hi hidden">गीले और धान खेतों के लिए उपयुक्त</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="crop-gallery">
+    <img src="https://plus.unsplash.com/premium_photo-1664910307279-7f8e551e1e1d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmljZSUyMGZpZWxkfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Rice Field">
+    <img src="https://media.istockphoto.com/id/621481948/photo/old-man-checking-ripe-rice-in-autumn.jpg?s=612x612&w=0&k=20&c=cBPqhu3_4O-2GoKdA0dZV3LtsfPqNZnp4qoCF7PzYjo=" alt="Rice Paddy">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEuX-l5odxaGWgX0OCrzZrE-N8vTshQid_Rw&s" alt="Rice Plants">
+  </div>
+</section>
+
+<footer>
+  <p><span class="lang-en">© 2025 Farmer Knowledge Base | Empowering Farmers 🌿</span><span class="lang-hi hidden">© 2025 किसान ज्ञान आधार | किसानों को सशक्त बनाना 🌿</span></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
